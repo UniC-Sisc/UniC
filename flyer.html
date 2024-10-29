@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniC Board Game Night</title>
+    <style>
+        /* Stiluri de bază */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .flyer-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+            animation: slideIn 1.2s ease-out;
+        }
+        h1 {
+            color: #ff6347;
+            font-size: 2.5em;
+            animation: zoomIn 1s ease;
+            font-weight: bold;
+            text-shadow: 2px 2px #ffa07a;
+        }
+        .motto {
+            font-size: 1.4em;
+            color: #ffa07a;
+            margin: 10px 0 20px;
+            animation: slideIn 1.5s ease;
+        }
+        .activities {
+            margin-top: 20px;
+            text-align: left;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .activity {
+            padding: 10px;
+            border-bottom: 1px dashed #ff6347;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .activity:last-child {
+            border-bottom: none;
+        }
+        .activity:hover {
+            background-color: #ffe4e1;
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #666;
+            animation: slideIn 2s ease;
+        }
+        
+        /* Animații */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Stiluri pentru linkul special */
+        .special-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 99, 71, 0.3);
+            animation: bounce 1.5s infinite alternate;
+        }
+        .special-link:hover {
+            background-color: #ff4500;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="flyer-container">
+    <!-- Logo-ul echipei UniC -->
+    <img src="image.png" alt="UniC Logo" class="logo">
+    
+    <!-- Titlul evenimentului -->
+    <h1>UniC Board Game Night</h1>
+    
+    <!-- Motto-ul echipei -->
+    <p class="motto">Fiecare e unic… Împreună suntem UniC.</p>
+    
+    <!-- Butonul de link special -->
+    <a href="#activities-section" class="special-link">Exploră Activitățile!</a>
+    
+    <!-- Descrierea activităților -->
+    <div id="activities-section" class="activities">
+        <h2>Activități:</h2>
+        <div class="activity">
+            🎲 <strong>Jocuri de societate:</strong> Monopoly, Catan, Risk și multe altele.
+        </div>
+        <div class="activity">
+            ♟️ <strong>Concurs de Șah:</strong> Demonstrează-ți abilitățile strategice.
+        </div>
+        <div class="activity">
+            🏓 <strong>Activități sportive:</strong> Ping-pong, mini-fotbal, darts.
+        </div>
+        <div class="activity">
+            💻 <strong>Atelier de programare:</strong> Creează-ți primul joc în Python.
+        </div>
+        <div class="activity">
+            🎨 <strong>Workshop de desen:</strong> Lasă-ți imaginația să zboare.
+        </div>
+    </div>
+    
+    <!-- Secțiunea de încheiere -->
+    <div class="footer">
+        <p>Eveniment organizat de echipa UniC pentru a .</p>
+        <p>Contact: <a href="mailto:unic.team@example.com">unic.team@example.com</a></p>
+    </div>
+</div>
+
+</body>
+</html>
